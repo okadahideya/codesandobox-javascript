@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
+    <title>TODO</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
 
   <body>
-    <div id="app"></div>
-    <p>修正しました</p>
-
+    <div class="input-area">
+      <input id="add-text" type="text" placeholder="TODOを入力" />
+      <button id="add-button">追加</button>
+    </div>
+    <div class="no-area">
+      <p class="title">未完了のTODO</p>
+      <ul id="no-list"></ul>
+    </div>
+    <div class="yes-area">
+      <p class="title">完了したTODO</p>
+      <ul id="yes-list"></ul>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
